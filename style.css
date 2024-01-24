@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255,223,187);
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'BebasNeue' ;
+    src: url('fonts/BebasNeue-Regular.ttf') format('ttf');
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('ttf');
+}
+
+h1 {
+    font-family: 'BebasNeue';
+    margin-top: 1.5em;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'BebasNeue';
+    margin: 20px;
+    margin-left: 0;
+}
+
+
+p {
+    font-family:'Montserrat';
+}
+
+h3 {
+    font-family: 'BebasNeue';
+    padding: 4px;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    background:  linear-gradient(rgba(248,192,129,0.8), rgba(248,192,129,0.8)), url('images/print.png') no-repeat center center/cover;
+    width: 100vw;
+    height: 74px;
+    border-bottom: 1px black;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.print {
+    height: 74px;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    position:fixed;
+    width: 375px;
+    opacity: 10%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    text-align: left;
+    align-items:center;
+    margin-right: 20px;
+}
+
+.help {
+    margin-left: 20px;
+    margin-right: 20px ;
+}
+
+
+.button {
+    background-color: rgb(243, 113, 33);
+    color: black;
+    font-size: 13px;
+    font-family: 'BebasNeue';
+    border-radius: 50%;
+    width: 55px; 
+    height: 29px; 
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex: 0 0 auto;
+    gap: 10px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    z-index:1;
+}
+
+.button:hover {
+    background-color: rgb(83, 37, 7);
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 1em;    
+    list-style: none;
+    align-items: center;
+}
+  
+
+.foto {
+    height: 64px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    height: 60px;
+    width: 35px;
+    margin-right: auto;
+    position:absolute;
+    top: 10px;
+    left: 10px  ;
+}
+
+
+.kleding {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3em;
+    gap: 20px;
+    overflow-x:auto;
+    padding: 1em;
+  }
+
+  .sfeer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3em;
+    gap: 20px;
+    overflow-x:auto;
+    padding: 1em;
+    padding-top: 0%;
+  }
+
+
+.locaties {
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    padding-top: 0%;
+    gap: 2em;
+    overflow-x: auto;
+    align-items: center;
+    
+  }
+
+footer {
+    position: fixed;
+    color: rgb(255,223,187);
+    bottom: 0;
+    width: 100vw;
+    height: 85px;
+    background: url('images/print.png') 0 0 / cover no-repeat;
+    font-size: 12px;
+    border:none;
+}
+
+#footerbackground > p {
+    text-align: center;
+}
+
+nav{
+    margin: auto;
+}
+
+#footerbackground{
+    width: 90vw;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-top: calc((85px - 60px)/2);
+}
+
+#overlay{
+    background-color: rgb(248,192,129);
+    background-image: url("images/logo2.png");
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-position: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000;
+}
+
+.up{
+    transition: all 0.5s ease-in-out;
+    transform: translate(0, -100vh);
+}
+
+
+/* ARROW */
+
+@keyframes bounce {
+    from, to {
+      transform: translateY(0) scale(0.85 );
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    margin-left:-23px;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/colorkit\(1\).svg');
+    background-size: contain;
+    animation: bounce 4s infinite;
+  }
+
+.grotebalk {
+    background-color: darkgray;
+    width: 70vw;
+    height: 40px;
+    padding: 1em;
+}
+
+.kleinebalk {
+    background-color: darkgreen;
+    width: 50vw;
+    height: 20px;
+}
+
+  
