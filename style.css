@@ -37,7 +37,6 @@ h2 {
     margin-left: 0;
 }
 
-
 p {
     font-family:'Montserrat';
 }
@@ -48,9 +47,6 @@ h3 {
     font-size: 22px;
     margin-left: 8px;
 }
-
-
-
 
 header {
     position: sticky;
@@ -93,7 +89,6 @@ header {
     margin-right: 20px ;
 }
 
-
 .button {
     background-color: rgb(243, 113, 33);
     color: black;
@@ -124,7 +119,6 @@ ul {
     align-items: center;
 }
   
-
 .foto {
     height: 64px;
     margin-top: 5px;
@@ -140,7 +134,6 @@ ul {
     top: 10px;
     left: 10px  ;
 }
-
 
 .kleding {
     display: flex;
@@ -161,7 +154,6 @@ ul {
     padding-top: 0%;
   }
 
-
 .locaties {
     display: flex;
     text-align: center;
@@ -170,8 +162,7 @@ ul {
     gap: 2em;
     overflow-x: auto;
     align-items: center;
-    
-  }
+ }
 
 footer {
     position: fixed;
@@ -195,7 +186,7 @@ nav{
 #footerbackground{
     width: 90vw;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     margin: auto;
     margin-top: calc((85px - 60px)/2);
 }
